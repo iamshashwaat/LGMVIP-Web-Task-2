@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2344/2344132.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="box">
+	<h2 class="title">Calculator</h2>
+
+		<div class="calc">
+			<form>
+				<div class="screen">
+					<input type="text" name="screen">
+				</div>
+				<div>
+					<input type="button" value="🗑️" onclick="screen.value = ''">
+					<input type="button" value="⌫" onclick="screen.value = screen.value.toString().slice(0,-1)">
+					<input type="button" value="." onclick="screen.value += '.'">
+					<input type="button" value="/" onclick="screen.value += '/'">
+				</div>
+				<div>
+					<input type="button" value="7" onclick="screen.value += '7'">
+					<input type="button" value="8" onclick="screen.value += '8'">
+					<input type="button" value="9" onclick="screen.value += '9'">
+					<input type="button" value="*" onclick="screen.value += '*'">
+				</div>
+				<div>
+					<input type="button" value="4" onclick="screen.value += '4'">
+					<input type="button" value="5" onclick="screen.value += '5'">
+					<input type="button" value="6" onclick="screen.value += '6'">
+					<input type="button" value="-" onclick="screen.value += '-'">
+				</div>
+				<div>
+					<input type="button" value="1" onclick="screen.value += '1'">
+					<input type="button" value="2" onclick="screen.value += '2'">
+					<input type="button" value="3" onclick="screen.value += '3'">
+					<input type="button" value="+" onclick="screen.value += '+'">
+				</div>
+				<div>
+					<input type="button" value="00" onclick="screen.value += '00'">
+					<input type="button" value="0" onclick="screen.value += '0'">
+					<input type="button" value="=" onclick="screen.value = eval(screen.value)" class="isequal">
+				</div>
+			</form>
+		</div>
+		<div class="links">
+				<a href="https://in.linkedin.com/in/iamshashwaat" target="blank" class="button"><i class="fa-brands fa-linkedin"></i>/iamshashwaat</a>
+				<a href="https://github.com/iamshashwaat" target="blank" class="button"><i class="fa-brands fa-github"></i>/iamshashwaat</a>
+				<p class="love">Made with <i class="fa-brands fa-gratipay"></i>.<p>
+		</div>
+	</div>
+
+</body>
+</html>

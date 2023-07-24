@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Orbitron', sans-serif;
+	box-sizing: border-box;
+}
+.box{
+	display: flex;
+	width: 100%;
+	background: #F6F4EB;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100vh;
+	flex-direction: column;
+}
+h2.title{
+	margin-top: 50px;
+	font-size: 30px;
+	color: #4682A9;
+
+}
+.calc{
+	background: #9BABB8;
+	padding: 9px;
+	border-radius: 12px;
+	margin-top: 30px;
+	box-shadow: 6px 6px 17px rgba(1, 1, 1, 0.3),-9px -9px 17px rgba(254, 254, 254, 0.2);
+}
+form .screen{
+	display: flex;
+	margin: 14px 0;
+	justify-content: flex-end;
+}
+.calc form input{
+	border: none;
+	width: 50px;
+	background: transparent;
+	height: 50px;
+	margin: 6px;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 6px 6px 17px rgba(1, 1, 1, 0.3),-9px -9px 17px rgba(254, 254, 254, 0.2);
+	outline: none;
+	font-size: 18px;
+	color: white;
+}
+form .screen input{
+	font-size: 35px;
+	flex: 1;
+	box-shadow: none;
+	border-radius: 0px;
+	text-align: right;
+}
+form input.isequal{
+	width: 115px;	
+}
+.links{
+	text-align: center;
+	margin-top: 10px;
+}
+.links .button{
+	color: #4682A9;
+	text-decoration: none;
+	padding: 15px;
+
+}
+.links .button:hover,.love{
+	color: black;
+}
